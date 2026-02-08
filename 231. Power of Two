@@ -1,0 +1,10 @@
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if(n<=0)return false;
+        while(n%2==0){//because if 3 hai ya 5 hai to uska remainder 1 aaega and that can newver be a power of 2
+            n=n/2;
+        }
+        return n==1;//if power hogi to end me 2/2 that is 1 aaega
+        
+    }
+}
